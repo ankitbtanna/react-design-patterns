@@ -2,7 +2,6 @@ import styled from "@emotion/styled/macro";
 
 const Container = styled.div`
   display: flex;
-  height: 100vh;
 `;
 
 const Pane = styled.div`
