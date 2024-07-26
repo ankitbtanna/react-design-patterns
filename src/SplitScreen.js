@@ -9,14 +9,15 @@ const Pane = styled.div`
   flex: 1;
 `;
 
-export const SplitScreen = ({ left: Left, right: Right }) => {
+export const SplitScreen = ({ children }) => {
+  const [ left, right ] = children;
   return (
     <Container>
         <Pane>
-            <Left />
+            {left}
         </Pane>
         <Pane>
-            <Right />
+            {right}
         </Pane>
     </Container>
   );

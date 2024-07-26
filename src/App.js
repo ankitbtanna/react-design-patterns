@@ -12,10 +12,12 @@ const RightHandComponent = () => {
 
 function App() {
   return (
-    <SplitScreen
-      left={LeftHandComponent}
-      right={RightHandComponent}
-    ></SplitScreen>
+    <>
+      <SplitScreen>
+        <LeftHandComponent />
+        <RightHandComponent />
+      </SplitScreen>
+    </>
   );
 }
 
