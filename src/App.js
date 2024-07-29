@@ -9,6 +9,12 @@ import { SmallProductListItem } from "./products/SmallProductListItem";
 import { NumberedList } from "./NumberedList";
 import { LargeProductListItem } from "./products/LargeProductListItem";
 import { Modal } from "./Modal";
+import { Tabs } from "./tabs/Tabs";
+import { Tab } from "./tabs/Tab";
+import { Toggle } from "./toggle/toggle.component";
+import { ToggleOn } from "./toggle/toggle-on.component";
+import { ToggleOff } from "./toggle/toggle-off.component";
+import { ToggleButton } from "./toggle/toggle-button.component";
 
 const LeftHandComponent = ({ name }) => {
   return <h1 style={{ backgroundColor: "green" }}>Left! {name}</h1>;
@@ -62,6 +68,27 @@ function App() {
       <Modal>
         <LargeProductListItem product={products[0]}></LargeProductListItem>
       </Modal>
+
+      <Tabs>
+        <Tab label="Tab 1">
+          <h2>Tab 1</h2>
+        </Tab>
+        <Tab label="Tab 2">
+          <h2>Tab 2</h2>
+        </Tab>
+        <Tab label="Tab 3">
+          <h2>Tab 3</h2>
+        </Tab>
+        <Tab label="Tab 4">
+          <h2>Tab 4</h2>
+        </Tab>
+      </Tabs>
+
+      <Toggle>
+        <ToggleOn>The button is ON</ToggleOn>
+        <ToggleOff>The button is OFF</ToggleOff>
+        <ToggleButton />
+      </Toggle>
     </>
   );
 }
